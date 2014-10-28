@@ -1,0 +1,26 @@
+﻿printf函式:
+printf ("格式" ,變數...);
+格式化用:
+%c - 字元
+%s - 字串
+%d - 整數
+%f - 浮點數
+%a.bd -> a = 位數(不夠補空白), b = 小數位數
+
+跳脫字元:
+\n - 換行
+\t - 定位點
+\0 - NULL
+\' - '
+\" - "
+\\ - \
+
+scanf類似printf 只是變數名稱前加& (傳記憶體位址)
+
+getchar() / putchar() 輸入/輸出字元
+puts() / gets() 輸入/輸出字串 (不安全 易產生overflow  應用fgets代替)
+
+command line的stdin / stdout重導向
+test.exe > test.txt  重導向stdout 開新檔案
+test.exe >> test.txt 重導向stdout 附加輸出到檔案尾
+test.exe < test.txt  重導向stdin  將檔案內容輸入程式

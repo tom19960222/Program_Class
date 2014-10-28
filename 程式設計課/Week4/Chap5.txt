@@ -1,0 +1,46 @@
+﻿if (條件) { 敘述; }
+else if (條件) { 敘述; }
+else { 敘述; }
+
+如果大於一行，則最前面和最後面要加大括號
+
+如果條件式打 x = y 且 x 值不為零，則條件式恆真
+
+浮點數比較易有誤差， == 比較時盡量用整數
+
+三元運算子 '?'
+(條件式) ? true回傳結果 : false回傳結果
+好記法: (條件) ? Yes : No
+
+switch (變數)
+{
+    case 變數內容: 
+        Do something...;
+        break;
+}
+
+如果沒有break 則會往下一個case繼續執行
+可利用此特性比較範圍 例如:
+
+switch (num)
+{
+    case 1:
+    case 2:
+        Do something....;
+        break;
+}
+
+for (一進來先做什麼; 條件; 每次迴圈結束要做什麼)
+
+while (條件) { Do something... } 
+條件成立才進入迴圈
+
+do { Do something... } while (條件)
+先做，再判斷條件是否要再做
+
+continue 強迫回到迴圈開頭
+break 強迫跳出迴圈
+
+goto 強迫跳到程式某處
+標籤為: (標籤名稱):
+使用法: goto 標籤名稱;
