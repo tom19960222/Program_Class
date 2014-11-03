@@ -30,7 +30,7 @@ int main()
 	
 	printf ("Please input 2 numbers: ");
 	scanf ("%d %d", &n1, &n2);
-	printf ("gcd_old: %d\n", gcd_old(n1,n2));
+	//printf ("gcd_old: %d\n", gcd_old(n1,n2));
 	printf ("gcd: %d\n", gcd(n1,n2));
 	return 0;
 }
