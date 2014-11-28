@@ -4,7 +4,7 @@
 void MakeHorizontalWalk (int *array, int n1, int n2)
 {
 	int i;
-	memset(array,0,sizeof(int)*n1*n2);
+	memset(array,0,sizeof(n1*n2));
 	for (i = 1; i <= n1*n2; i++)
 	{
 		*array = i;
