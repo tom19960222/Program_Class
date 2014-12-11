@@ -71,7 +71,7 @@ int main()
 		
 		printf ("Travel: ");
 		scanf ("%d %d", &x, &y);
-		board[y][x] = 1;
+//		board[y][x] = 1;
 	}
 	
 	return 0;

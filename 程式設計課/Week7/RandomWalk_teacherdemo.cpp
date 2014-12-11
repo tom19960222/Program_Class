@@ -2,7 +2,7 @@
   Author: Hsing-Tai Chung
   Date: 2014, 11, 6
 */
- 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

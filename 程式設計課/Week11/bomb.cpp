@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-#define SIZE_MAX 20
+#define SIZE_MAX 200
 
 void swap (int *n1, int *n2)
 {
