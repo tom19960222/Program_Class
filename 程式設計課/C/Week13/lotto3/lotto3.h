@@ -31,14 +31,14 @@ struct WinnerInfo{
 /* information for a lotto */
 struct Lotto
 {
-    int id;             // lotto id
+	int id;             // lotto id
     Date date;          // opening date
     int num[6];         // winning numbers
     int winnerCount;    // number of winners
     WinnerInfo *winners[MAXWINNER];  // winners info
 };
 
-void add(Lotto *lottos[], Lotto *lotto, int lottoCount);   // add lotto information
+void add(Lotto *lottos[], Lotto *lotto, int *Count);   // add lotto information
 void addwithID(Lotto *lottos[], Lotto *lotto, int ID);
 void search(int N);              // search specific lotto infomration 
 void list(Lotto *lotto);         // list information of a lotto

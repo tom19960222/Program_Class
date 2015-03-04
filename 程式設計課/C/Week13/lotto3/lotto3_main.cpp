@@ -1,14 +1,12 @@
 #include "lotto3.h"
 
 /* available functions for main menu */
-/*
+
 #define ADD      1   // add a lotto
 #define SEARCH   2   // search lotto by date
 #define LIST     3   // list summary for some lottos   
 #define MODIFY   4   // modify a lotto
 #define DELETE   5   // delete a lotto
-*/
-enum {ADD=1, SEARCH, LIST, MODIFY, DELETE};
 
 int main()
 {
@@ -33,15 +31,13 @@ int main()
      if(choice==6) break;
      switch(choice){
        case ADD:
-         do{             
-           lotto[lottoCount] = (Lotto *)malloc(sizeof(struct Lotto)); 
-           memset(lotto[lottoCount], 0, sizeof(struct Lotto));
-           add(lotto, lotto[lottoCount], lottoCount);
-           lottoCount++;
+         do{            
+		   lotto[lottoCount] = (Lotto*)malloc(sizeof(struct Lotto)); 
+           add(lotto, lotto[lottoCount], &lottoCount);
            printf("Add more (Y/N)? \n");
          }while(toupper(getch())=='Y');
-         
-         break;
+       break;
+        
        case SEARCH:
          printf ("Search by:\n");
          printf ("  [1] ID\n");
@@ -59,7 +55,6 @@ int main()
          			printf ("\nNot found!\n\n");
          	break;
          	case 2:
-         		memset(searchresult, 0, sizeof(int)*100);
          		printf ("Enter date: ");
          		scanf ("%d %d %d", &searchdate.year, &searchdate.month, &searchdate.day);
          		if (searchbyDate(lotto, searchdate, lottoCount, searchresult) > 0){
@@ -70,12 +65,14 @@ int main()
          			printf ("Not found!\n\n");
          	break;
          }
-         break;
+       break;
+       
        case LIST:
          printf("Enter id range: ");
          scanf("%d %d", &n1, &n2);
          listSome(lotto, n1, n2, lottoCount);
-         break;
+       break;
+       
        case MODIFY:
      	 printf ("Enter id: ");
      	 scanf ("%d", &ID);
@@ -83,7 +80,8 @@ int main()
      	 	modify(lotto[getLottoFromId(lotto, ID, lottoCount)]);
      	 }
      	 		
-         break;
+       break;
+       
        case DELETE:
      	 printf ("Enter id: ");
      	 scanf ("%d", &ID);
@@ -91,7 +89,7 @@ int main()
      	 	del(lotto, lotto[getLottoFromId(lotto, ID, lottoCount)], &lottoCount);
      	 else
      	 	printf ("Lotto not found\n");
-         break;
+       break;
      } 
   }
 }

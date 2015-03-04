@@ -60,6 +60,31 @@ int getLottoFromId (Lotto *lotto[], int id, int lottoCount)
 	return -1;
 }
 
+void InsertData(Lotto *target)
+{
+	int i;
+	printf ("Enter date: ");
+	scanf ("%d %d %d", &(target->date.year), &(target->date.month), &(target->date.day));
+	GenerateRandomNumbers(target->num, 6);
+	printf ("How many winner? ");
+	scanf ("%d", &(target->winnerCount));
+	
+	for (i = 1; i <= (target->winnerCount); i++)
+	{
+		target->winners[i] = (WinnerInfo*)malloc(sizeof(WinnerInfo));
+		printf ("\nEnter name: ");
+		fflush(stdin);
+		target->winners[i]->name = (char*)malloc(sizeof(char) * 100);
+		fgets(target->winners[i]->name, 100, stdin);
+		printf ("Enter id: ");
+		fflush(stdin);
+		fgets(target->winners[i]->id, 10, stdin);
+		printf ("Enter money: ");
+		fflush(stdin);
+		scanf ("%d", &(target->winners[i]->moneywin));	
+	}
+}
+
 void list(Lotto *lotto){
     printf("\nLotto ID: %d \n", lotto->id);
     printf("   Date: %d/%d/%d\n", lotto->date.year, lotto->date.month, lotto->date.day);
@@ -86,38 +111,19 @@ void listSome(Lotto *lotto[], int id1, int id2, int lottoCount){
     }
 }
 
-void add(Lotto *lottos[], Lotto *lotto, int lottoCount)
+void add(Lotto *lottos[], Lotto *target, int* Count)
 {
 start:
 	int i;
 	printf ("Enter ID: ");
-	scanf ("%d", &(lotto->id));
-	if (getLottoFromId(lottos, lotto->id, lottoCount) != -1)
+	scanf ("%d", &(target->id));
+	if (getLottoFromId(lottos, target->id, *Count) != -1)
 	{
 		printf ("No duplicate record allowed!\n\n");
 		goto start;
 	}
-	
-	printf ("Enter date: ");
-	scanf ("%d %d %d", &(lotto->date.year), &(lotto->date.month), &(lotto->date.day));
-	GenerateRandomNumbers(lotto->num, 6);
-	printf ("How many winner? ");
-	scanf ("%d", &(lotto->winnerCount));
-	
-	for (i = 1; i <= (lotto->winnerCount); i++)
-	{
-		lotto->winners[i] = (WinnerInfo*)malloc(sizeof(WinnerInfo));
-		printf ("\nEnter name: ");
-		fflush(stdin);
-		lotto->winners[i]->name = (char*)malloc(sizeof(char) * 100);
-		fgets(lotto->winners[i]->name, 100, stdin);
-		printf ("Enter id: ");
-		fflush(stdin);
-		fgets(lotto->winners[i]->id, 10, stdin);
-		printf ("Enter money: ");
-		fflush(stdin);
-		scanf ("%d", &(lotto->winners[i]->moneywin));	
-	}
+	InsertData(target);
+	(*Count)++;
 }
 
 int del (Lotto *lotto[], Lotto *target, int *Count)
@@ -134,27 +140,7 @@ int del (Lotto *lotto[], Lotto *target, int *Count)
 
 void modify(Lotto *target)
 {	
-	int i;
-	printf ("Enter date: ");
-	scanf ("%d %d %d", &(target->date.year), &(target->date.month), &(target->date.day));
-	GenerateRandomNumbers(target->num, 6);
-	printf ("How many winner? ");
-	scanf ("%d", &(target->winnerCount));
-	
-	for (i = 1; i <= (target->winnerCount); i++)
-	{
-		target->winners[i] = (WinnerInfo*)malloc(sizeof(WinnerInfo));
-		printf ("\nEnter name: ");
-		fflush(stdin);
-		target->winners[i]->name = (char*)malloc(sizeof(char) * 100);
-		fgets(target->winners[i]->name, 100, stdin);
-		printf ("Enter id: ");
-		fflush(stdin);
-		fgets(target->winners[i]->id, 10, stdin);
-		printf ("Enter money: ");
-		fflush(stdin);
-		scanf ("%d", &(target->winners[i]->moneywin));	
-	}
+	InsertData(target);
 }
 
 int searchbyID (Lotto *lotto[], int ID, int lottoCount)
