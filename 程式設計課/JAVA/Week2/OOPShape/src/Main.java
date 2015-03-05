@@ -14,7 +14,7 @@ public class Main {
         VertTriangle V1 = new VertTriangle(10, false, VertTriangle.Direction.LEFTDOWN);
         V1.draw();
         System.out.println();
-        Parallelogram P1 = new Parallelogram(6,3);
+        Parallelogram P1 = new Parallelogram(10,5);
         P1.draw();
         System.out.println();
     }
