@@ -6,9 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f1f9ecc-78b8-4e78-8ad3-ef38162d2f2d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\src\IShape.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\src\VertTriangle.java" afterPath="" />
+    <list default="true" id="5f1f9ecc-78b8-4e78-8ad3-ef38162d2f2d" name="Default" comment="set packages&#10;fix bugs">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/IsoscelesTriangle.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/IsoscelesTriangle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Main.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OOPShape_jar/OOPShape.jar" afterPath="$PROJECT_DIR$/out/artifacts/OOPShape_jar/OOPShape.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Parallelogram.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Parallelogram.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Rect.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Rect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Square.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/Square.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/VertTriangle.class" afterPath="$PROJECT_DIR$/out/production/OOPShape/net/hsexpert/OOPShape/VertTriangle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Rect.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Rect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java" afterPath="$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="2e617b53-4244-472e-b1a5-292520988c77" name="Rejected commit: Default" comment="set packages&#10;fix bugs" />
     <ignored path="OOPShape.iws" />
@@ -54,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rect.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Rect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3324937" vertical-offset="267" max-vertical-offset="893">
-              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="988">
+              <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -67,9 +79,12 @@
       <file leaf-file-name="Parallelogram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="855">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1121">
+              <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+              <folding>
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,8 +92,8 @@
       <file leaf-file-name="IsoscelesTriangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="661" max-vertical-offset="1045">
+              <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -87,13 +102,11 @@
       <file leaf-file-name="Square.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="342">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding>
-                <element signature="e#133#134#0" expanded="false" />
-                <element signature="e#156#157#0" expanded="false" />
-                <element signature="e#192#193#0" expanded="false" />
-                <element signature="e#233#234#0" expanded="false" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,18 +115,20 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="684">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="646">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-              <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.3299748" vertical-offset="59" max-vertical-offset="912">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -122,8 +137,8 @@
       <file leaf-file-name="VertTriangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="1558">
-              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1634">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,8 +167,13 @@
         <option value="$PROJECT_DIR$/src/Triangle.java" />
         <option value="$PROJECT_DIR$/src/IShape.java" />
         <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/IShape.java" />
-        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Triangle.java" />
         <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Rect.java" />
+        <option value="$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java" />
       </list>
     </option>
   </component>
@@ -186,7 +206,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -239,7 +259,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,7 +487,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -478,7 +498,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -488,6 +507,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -521,7 +541,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -530,10 +553,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -550,7 +571,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="646">
           <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -590,7 +613,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="513">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -599,10 +625,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -619,7 +643,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,7 +685,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="513">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,10 +697,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +715,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="646">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,7 +757,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="513">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,10 +769,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -757,7 +787,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="646">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,7 +829,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="513">
           <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -806,10 +841,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,7 +859,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="646">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -851,10 +886,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="475">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,7 +904,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="760">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -879,67 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="342">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#133#134#0" expanded="false" />
-            <element signature="e#156#157#0" expanded="false" />
-            <element signature="e#192#193#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="684">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/ShapeBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="323">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="855">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="1558">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
-          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -952,10 +926,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/ShapeBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="323">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="211" max-vertical-offset="646">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="method#draw#0;class#Triangle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/VertTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1634">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/IsoscelesTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="661" max-vertical-offset="1045">
+          <caret line="47" column="75" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Parallelogram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="685" max-vertical-offset="1121">
+          <caret line="50" column="69" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Rect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3324937" vertical-offset="267" max-vertical-offset="893">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="591" max-vertical-offset="988">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/hsexpert/OOPShape/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3299748" vertical-offset="59" max-vertical-offset="912">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>

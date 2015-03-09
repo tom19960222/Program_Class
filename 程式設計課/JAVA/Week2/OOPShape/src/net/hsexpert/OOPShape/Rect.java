@@ -44,4 +44,9 @@ public class Rect extends ShapeBase{
             System.out.println();
         }
     }
+
+    public String toString()
+    {
+        return String.format("Rect:\n  Width: %d\n  Height:%d\n  Filled: %s", width, height, filled.toString());
+    }
 }

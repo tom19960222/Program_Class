@@ -24,7 +24,7 @@ public class VertTriangle extends Triangle {
         TriangleDirection = Dirct;
     }
 
-    public String getDirection()
+    public String getDirectionString()
     {
         switch(TriangleDirection)
         {
@@ -84,5 +84,9 @@ public class VertTriangle extends Triangle {
 
                 break;
         }
+    }
+    public String toString()
+    {
+        return String.format("VertTriangle:\n  Height:%d\n  Filled: %s\n  Direction: %s", height, filled.toString(), this.getDirectionString());
     }
 }

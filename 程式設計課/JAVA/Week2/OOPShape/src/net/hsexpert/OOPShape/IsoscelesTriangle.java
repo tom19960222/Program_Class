@@ -14,6 +14,14 @@ public class IsoscelesTriangle extends Triangle {
     public Direction getDirection() {
         return _direction;
     }
+    public String getDirectionString() {
+        switch(_direction)
+        {
+            case Up: return "Up";
+            case Down: return "Down";
+        }
+        return "";
+    }
 
     public void draw()
     {
@@ -33,6 +41,11 @@ public class IsoscelesTriangle extends Triangle {
                 System.out.println();
             }
         }
+    }
+
+    public String toString()
+    {
+        return String.format("IsoscelesTriangle:\n  Height: %d\n  Filled: %s\n  Direction: %s", height, filled.toString(), this.getDirectionString());
     }
 }
 

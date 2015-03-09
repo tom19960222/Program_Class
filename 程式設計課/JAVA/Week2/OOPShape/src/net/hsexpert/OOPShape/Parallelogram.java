@@ -14,6 +14,14 @@ public class Parallelogram extends Rect {
     public Direction getDirection() {
         return _direction;
     }
+    public String getDirectionString() {
+        switch(_direction)
+        {
+            case Left: return "Left";
+            case Right: return "Right";
+        }
+        return "";
+    }
 
     public void draw()
     {
@@ -37,5 +45,9 @@ public class Parallelogram extends Rect {
                 System.out.println();
             }
         }
+    }
+    public String toString()
+    {
+        return String.format("Parallelogram:\n  Width: %d\n  Height: %d\n  Filled: %s\n  Direction: %s", width, height, filled.toString(), getDirectionString());
     }
 }

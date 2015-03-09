@@ -15,4 +15,8 @@ public class Square extends Rect {
     }
 
     public Square(int lenth, Boolean filled) { super(lenth, lenth, filled); }
+    public String toString()
+    {
+        return String.format("Square:\n  Lenth: %d\n  Filled: %s", width, filled.toString());
+    }
 }
