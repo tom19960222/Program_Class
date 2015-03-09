@@ -1,3 +1,5 @@
+package net.hsexpert.OOPShape;
+
 /**
  * Created by ikaros on 2015/3/9.
  */

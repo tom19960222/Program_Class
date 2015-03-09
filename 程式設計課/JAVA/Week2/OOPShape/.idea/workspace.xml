@@ -6,23 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f1f9ecc-78b8-4e78-8ad3-ef38162d2f2d" name="Default" comment="set packages&#10;fix bugs">
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\IShape.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\IsoscelesTriangle$Direction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\IsoscelesTriangle.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Main.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Parallelogram$Direction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Parallelogram.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Rect.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\ShapeBase.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Square.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\Triangle.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\VertTriangle$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\VertTriangle$Direction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ikaros\Google 雲端硬碟\平板\Program_Class\程式設計課\JAVA\Week2\OOPShape\out\production\OOPShape\VertTriangle.class" afterPath="" />
+    <list default="true" id="5f1f9ecc-78b8-4e78-8ad3-ef38162d2f2d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/OOPShape_jar/OOPShape.jar" afterPath="$PROJECT_DIR$/out/artifacts/OOPShape_jar/OOPShape.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/OOPShape/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/OOPShape/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="2e617b53-4244-472e-b1a5-292520988c77" name="Rejected commit: Default" comment="set packages&#10;fix bugs">
@@ -476,6 +462,13 @@
       <option name="number" value="Default" />
       <updated>1425285659985</updated>
     </task>
+    <task id="LOCAL-00001" summary="set packages&#10;fix bugs">
+      <created>1425892321794</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1425892321794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
