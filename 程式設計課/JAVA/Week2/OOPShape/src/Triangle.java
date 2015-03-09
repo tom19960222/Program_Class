@@ -1,7 +1,7 @@
 /**
  * Created by ikaros on 2015/3/2.
  */
-public class Triangle extends ShapeBase {
+public abstract class Triangle extends ShapeBase {
 
     protected int height;
     protected Boolean filled;
