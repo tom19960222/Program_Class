@@ -3,7 +3,7 @@ package net.hsexpert.OOPShape;
 /**
  * Created by ikaros on 2015/3/2.
  */
-public abstract class Triangle extends ShapeBase {
+public abstract class Triangle extends Shape {
 
     protected int height;
     protected Boolean filled;

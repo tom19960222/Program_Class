@@ -3,7 +3,7 @@ package net.hsexpert.OOPShape;
 /**
  * Created by ikaros on 2015/3/2.
  */
-public class Rect extends ShapeBase{
+public class Rect extends Shape {
     protected int width;
     protected int height;
     protected Boolean filled;
