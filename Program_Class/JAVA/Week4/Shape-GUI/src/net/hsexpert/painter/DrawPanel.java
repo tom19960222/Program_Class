@@ -28,9 +28,11 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
     {
         for(int i = 0; i < 1000; i++)
         {
-            if(i % 3 == 0) ShapeList.add(Rect.generateRandomRect());
-            else if (i % 3 == 1) ShapeList.add(Triangle.generateRandomTriangle());
-            else ShapeList.add(Oval.generateRandomOval());
+            if(i % 5 == 0) ShapeList.add(Rect.generateRandomRect());
+            else if (i % 5 == 1) ShapeList.add(Triangle.generateRandomTriangle());
+            else if (i % 5 == 2) ShapeList.add(Oval.generateRandomOval());
+            else if (i % 5 == 3) ShapeList.add(Line.generateRandomLine());
+            else ShapeList.add(RoundRect.generateRandomRoundRect());
         }
         repaint();
     }

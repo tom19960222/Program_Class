@@ -32,7 +32,7 @@ public class PainterPanel extends JPanel implements ActionListener, ChangeListen
     private JSlider slideStroke;
     private JLabel labelStroke;
 
-    public enum Shape {Rect, Triangle, Oval, Line, Custom};
+    public enum Shape {Rect, Triangle, Oval, Line, Custom}
 
     public static Color Color1 = new Color(0,0,0);
     public static Color Color2 = new Color(0,0,0);
