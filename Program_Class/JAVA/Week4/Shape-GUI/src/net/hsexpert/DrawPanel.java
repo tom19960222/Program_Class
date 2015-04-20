@@ -8,6 +8,7 @@ import java.awt.event.MouseMotionListener;
 import java.util.*;
 
 
+
 /**
  * Created by ikaros on 2015/3/17.
  */
@@ -57,9 +58,18 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
         Dragging = false;
         x2 = e.getX();
         y2 = e.getY();
-        Rect R = new Rect(x1, y1, x2, y2);
-        ShapeList.add(R);
+        Shape finalShape = new Rect(0,0,0,0);
+        switch(DrawFrame.CurrentShape) {
+            case Rect: finalShape = new Rect(((Rect) DragShape)); break;
+            case Triangle: finalShape = new Triangle(((Triangle) DragShape)); break;
+            case Line: finalShape = new Line(((Line) DragShape)); break;
+            case Oval: finalShape = new Oval(((Oval) DragShape)); break;
+        }
+        ShapeList.add(finalShape);
         ShapeList.remove(DragShape);
+
+        DragShape = null;
+        finalShape = null;
         repaint();
     }
 
@@ -79,17 +89,25 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
             Dragging = true;
             x2 = e.getX();
             y2 = e.getY();
-            DragShape = new Rect(x1, y1, x2, y2);
+
+            switch(DrawFrame.CurrentShape) {
+                case Rect: DragShape = new Rect(x1,y1,x2,y2,DrawFrame.Color1,DrawFrame.Color2,DrawFrame.drawFilled,DrawFrame.strokeWidth,DrawFrame.drawGradient); break;
+                case Triangle: DragShape = new Triangle(x1,y1,x2,y2,DrawFrame.Color1,DrawFrame.Color2,DrawFrame.drawFilled,DrawFrame.strokeWidth,DrawFrame.drawGradient); break;
+                case Line: DragShape = new Line(x1,y1,x2,y2,DrawFrame.Color1,DrawFrame.Color2,DrawFrame.drawFilled,DrawFrame.strokeWidth,DrawFrame.drawGradient); break;
+                case Oval: DragShape = new Oval(x1,y1,Math.abs(x1-x2), Math.abs(y1-y2),DrawFrame.Color1,DrawFrame.Color2,DrawFrame.drawFilled,DrawFrame.strokeWidth,DrawFrame.drawGradient); break;
+            }
             ShapeList.add(DragShape);
             repaint();
         }
         else {
             x2 = e.getX();
             y2 = e.getY();
-            DragShape.x1 = x1;
-            DragShape.x2 = x2;
-            DragShape.y1 = y1;
-            DragShape.y2 = y2;
+            switch(DrawFrame.CurrentShape) {
+                case Rect: ((Rect) DragShape).setPointer(x1,y1,x2,y2); break;
+                case Triangle: ((Triangle) DragShape).setLocationByMouseCoord(x1,y1,x2,y2); break;
+                case Line: ((Line) DragShape).setPointer(x1,y1,x2,y2); break;
+                case Oval: ((Oval) DragShape).setPointer(x1,y1,Math.abs(x1-x2), Math.abs(y1-y2)); break;
+            }
             repaint();
         }
     }
