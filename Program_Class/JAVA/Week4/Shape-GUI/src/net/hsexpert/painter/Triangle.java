@@ -1,4 +1,4 @@
-package net.hsexpert;
+package net.hsexpert.painter;
 
 import java.awt.*;
 import java.util.Random;
@@ -6,7 +6,7 @@ import java.util.Random;
 /**
  * Created by ikaros on 2015/4/7.
  */
-public class Triangle extends Shape {
+public class Triangle extends net.hsexpert.painter.Shape {
     int x3, y3;
     public Triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
         super(x1,y1,x2,y2);
@@ -21,7 +21,7 @@ public class Triangle extends Shape {
     public Triangle(int x1, int y1, int x2, int y2)
     {
         super();
-        this.setLocationByMouseCoord(x1, y1, x2, y2);
+        this.setPointer(x1, y1, x2, y2);
         this.setColor1(Color.BLACK);
         this.setColor2(Color.BLACK);
         this.setFilled(false);
@@ -58,7 +58,7 @@ public class Triangle extends Shape {
         this.strokeWidth = src.strokeWidth;
         this.gradient = src.gradient;
     }
-    public void setLocationByMouseCoord(int x1, int y1, int x2, int y2)
+    public void setPointer(int x1, int y1, int x2, int y2)
     {
         this.x1 = x1;
         this.y1 = y2;
@@ -66,6 +66,15 @@ public class Triangle extends Shape {
         this.y2 = y1;
         this.x3 = x2;
         this.y3 = y2;
+    }
+    public void setPointerWithThreePoints(int x1, int y1, int x2, int y2, int x3, int y3)
+    {
+        this.x1 = x1;
+        this.y1 = y2;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.x3 = x3;
+        this.y3 = y3;
     }
 
     @Override
@@ -84,20 +93,25 @@ public class Triangle extends Shape {
     public static Triangle generateRandomTriangle()
     {
         Random rnd = new Random();
-        int x1, x2, y1, y2, x3, y3, R, G, B;
+        int x1, x2, y1, y2, x3, y3, R1, G1, B1, R2, G2, B2;
         x1 = rnd.nextInt(1280);
         x2 = rnd.nextInt(1280);
         x3 = rnd.nextInt(1280);
         y1 = rnd.nextInt(720);
         y2 = rnd.nextInt(720);
         y3 = rnd.nextInt(720);
-        R = rnd.nextInt(255);
-        G = rnd.nextInt(255);
-        B = rnd.nextInt(255);
+        R1 = rnd.nextInt(255);
+        G1 = rnd.nextInt(255);
+        B1 = rnd.nextInt(255);
+        R2 = rnd.nextInt(255);
+        G2 = rnd.nextInt(255);
+        B2 = rnd.nextInt(255);
 
         Triangle Tri = new Triangle(x1, y1, x2, y2, x3, y3);
-        Tri.setColor1(new Color(R, G, B));
+        Tri.setColor1(new Color(R1, G1, B1));
+        Tri.setColor2(new Color(R2, G2, B2));
         Tri.setFilled(rnd.nextBoolean());
+        Tri.setGradient(rnd.nextBoolean());
 
         return Tri;
     }

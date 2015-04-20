@@ -1,4 +1,4 @@
-package net.hsexpert;
+package net.hsexpert.painter;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by ikaros on 2015/3/23.
  */
-public class DrawFrame extends JFrame implements ActionListener, ChangeListener{
+public class PainterPanel extends JPanel implements ActionListener, ChangeListener{
     public DrawPanel DrawPanel;
     public JPanel BottomPanel;
     public JPanel ActionPanel;
@@ -40,7 +40,8 @@ public class DrawFrame extends JFrame implements ActionListener, ChangeListener{
     public static int strokeWidth;
     public static Shape CurrentShape = Shape.Rect;
 
-    public DrawFrame() throws HeadlessException {
+    public PainterPanel() throws HeadlessException {
+        this.setLayout(new BorderLayout());
         DrawPanel = new DrawPanel();
         BottomPanel = new JPanel(new GridLayout(2,2));
         ActionPanel = new JPanel(new GridLayout(1,4));
@@ -54,7 +55,7 @@ public class DrawFrame extends JFrame implements ActionListener, ChangeListener{
         btnOval = new JButton("Oval");
         btnTriangle = new JButton("Triangle");
         btnLine = new JButton("Line");
-        btnCustomShape = new JButton("Custom");
+        btnCustomShape = new JButton("RoundRect");
         btnColor1 = new JButton("Color1");
         btnColor2 = new JButton("Color2");
         chkGradient = new JCheckBox("Gradient");
@@ -111,45 +112,26 @@ public class DrawFrame extends JFrame implements ActionListener, ChangeListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == btnRandomGenerate){
+        if(e.getSource() == btnRandomGenerate)
             DrawPanel.paintTest();
-
-        }
         else if (e.getSource() == btnRect)
-        {
             CurrentShape = Shape.Rect;
-        }
         else if (e.getSource() == btnTriangle)
-        {
             CurrentShape = Shape.Triangle;
-        }
-
         else if (e.getSource() == btnOval)
-        {
             CurrentShape = Shape.Oval;
-        }
         else if (e.getSource() == btnLine)
-        {
             CurrentShape = Shape.Line;
-        }
+        else if (e.getSource() == btnCustomShape)
+            CurrentShape = Shape.Custom;
         else if (e.getSource() == btnUndo)
         {
-            int i;
-            for(i = DrawPanel.ShapeList.size()-1; i >= 0; i--)
-                if (DrawPanel.ShapeList.get(i).getVisible()){
-                    DrawPanel.ShapeList.get(i).setVisible(false);
-                    break;
-                }
+            DrawPanel.Undo();
             DrawPanel.repaint();
         }
         else if (e.getSource() == btnRedo)
         {
-            int  i;
-            for(i = 0; i < DrawPanel.ShapeList.size(); i++)
-                if (!DrawPanel.ShapeList.get(i).getVisible()){
-                    DrawPanel.ShapeList.get(i).setVisible(true);
-                    break;
-                }
+            DrawPanel.Redo();
             DrawPanel.repaint();
         }
         else if (e.getSource() == btnClear)
@@ -157,22 +139,12 @@ public class DrawFrame extends JFrame implements ActionListener, ChangeListener{
             DrawPanel.ShapeList.clear();
             DrawPanel.repaint();
         }
-        else if (e.getSource() == btnCustomShape)
-        {
-
-        }
         else if (e.getSource() == btnColor1)
-        {
             Color1 = JColorChooser.showDialog(this, "Choose color1", Color1);
-        }
         else if (e.getSource() == btnColor2)
-        {
             Color2 = JColorChooser.showDialog(this, "Choose color2", Color2);
-        }
         else if (e.getSource() == chkGradient)
-        {
             drawGradient = chkGradient.isSelected();
-        }
         else if (e.getSource() == chkFilled)
             drawFilled = chkFilled.isSelected();
         updateButton();

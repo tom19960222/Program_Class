@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Shape-GUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Shape_GUI_jar</output-path>
+    <root id="archive" name="Shape-GUI.jar">
+      <element id="module-output" name="Shape-GUI" />
+    </root>
+  </artifact>
+</component>

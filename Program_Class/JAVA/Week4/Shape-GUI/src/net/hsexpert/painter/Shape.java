@@ -1,4 +1,4 @@
-package net.hsexpert;
+package net.hsexpert.painter;
 
 import java.awt.*;
 
@@ -16,6 +16,7 @@ public abstract class Shape {
     protected Boolean gradient;
 
     public abstract void draw(Graphics G);
+    public abstract void setPointer(int x1, int y1, int x2, int y2);
 
     public Boolean isGradient() {
         return gradient;

@@ -1,4 +1,4 @@
-package net.hsexpert;
+package net.hsexpert.painter;
 
 import java.awt.*;
 import java.util.Random;
@@ -9,17 +9,15 @@ import java.util.Random;
 public class Oval extends Shape{
     int width, height;
     public Oval(int x1, int y1, int width, int height) {
-        super(x1,y1,0,0);
-        this.width = width;
-        this.height = height;
-        this.color1 = Color.BLACK;
-        this.color2 = Color.BLACK;
-        this.filled = false;
+        this.setPointer(x1,y1,width,height);
+        this.setColor1(Color.BLACK);
+        this.setColor2(Color.BLACK);
+        this.setFilled(false);
         this.setStrokeWidth(10);
         this.setGradient(false);
     }
     public Oval(int x1, int y1, int width, int height, Color color1, Color color2, Boolean filled, int strokeWidth, Boolean gradient){
-        this(x1, y1, width, height);
+        this.setPointer(x1, y1, width, height);
         this.setColor1(color1);
         this.setColor2(color2);
         this.setFilled(filled);
@@ -52,27 +50,33 @@ public class Oval extends Shape{
     }
     public void setPointer(int x1, int y1, int width, int height){
         this.x1 = x1;
-        this.width = width;
         this.y1 = y1;
-        this.height = height;
+        this.width = Math.abs(width-x1);
+        this.height = Math.abs(height-y1);
     }
     public static Oval generateRandomOval()
     {
         Random rnd = new Random();
-        int x1, y1,width, height, R, G, B;
+        int x1, y1, width, height, R1, G1, B1, R2, G2, B2;
         x1 = rnd.nextInt(1280);
-        y1 = rnd.nextInt(720);
-        width = rnd.nextInt(1280);
+        y1 = rnd.nextInt(1280);
+        width = rnd.nextInt(720);
         height = rnd.nextInt(720);
-        R = rnd.nextInt(255);
-        G = rnd.nextInt(255);
-        B = rnd.nextInt(255);
+        R1 = rnd.nextInt(255);
+        G1 = rnd.nextInt(255);
+        B1 = rnd.nextInt(255);
+        R2 = rnd.nextInt(255);
+        G2 = rnd.nextInt(255);
+        B2 = rnd.nextInt(255);
 
-        Oval Ova = new Oval(x1, y1, width, height);
-        Ova.setColor1(new Color(R, G, B));
-        Ova.setFilled(rnd.nextBoolean());
+        Oval oval = new Oval(x1, y1, width, height);
+        oval.setColor1(new Color(R1, G1, B1));
+        oval.setColor2(new Color(R2, G2, B2));
+        oval.setFilled(rnd.nextBoolean());
+        oval.setGradient(rnd.nextBoolean());
 
-        return Ova;
+
+        return oval;
     }
 
 }

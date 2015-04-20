@@ -1,4 +1,8 @@
-package net.hsexpert;
+package net.hsexpert.painter;
+
+import net.hsexpert.main.TabFrame;
+
+import javax.swing.*;
 
 /**
  * Created by ikaros on 2015/3/17.
@@ -6,7 +10,8 @@ package net.hsexpert;
 public class ShapeTest {
     public static void main(String[] args)
     {
-        DrawFrame app = new DrawFrame();
+        TabFrame app = new TabFrame();
+        app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.setSize(1280, 720);
         app.setVisible(true);
     }
