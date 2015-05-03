@@ -1,4 +1,4 @@
-package net.hsexpert.painter;
+package net.hsexpert.main;
 
 import net.hsexpert.main.TabFrame;
 

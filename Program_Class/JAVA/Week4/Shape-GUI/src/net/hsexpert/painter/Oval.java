@@ -7,7 +7,7 @@ import java.util.Random;
  * Created by ikaros on 2015/4/7.
  */
 public class Oval extends Shape{
-    int width, height;
+    protected int width, height;
     public Oval(int x1, int y1, int width, int height) {
         this.setPointer(x1,y1,width,height);
         this.setColor1(Color.BLACK);
