@@ -1,10 +1,7 @@
 package net.hsexpert.TicTacToe;
 
-import net.hsexpert.painter.Shape;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 

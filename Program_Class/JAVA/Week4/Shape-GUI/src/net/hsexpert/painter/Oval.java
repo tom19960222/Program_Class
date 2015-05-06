@@ -48,11 +48,11 @@ public class Oval extends Shape{
         else
             g2d.drawOval(x1, y1, width, height);
     }
-    public void setPointer(int x1, int y1, int width, int height){
-        this.x1 = x1;
-        this.y1 = y1;
-        this.width = Math.abs(width-x1);
-        this.height = Math.abs(height-y1);
+    public void setPointer(int x1, int y1, int x2, int y2){
+        this.x1 = Math.min(x1,x2);
+        this.y1 = Math.min(y1,y2);
+        this.width = Math.abs(x2-x1);
+        this.height = Math.abs(y2-y1);
     }
     public static Oval generateRandomOval()
     {

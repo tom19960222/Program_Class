@@ -1,5 +1,7 @@
 package net.hsexpert.painter;
 
+import net.hsexpert.TicTacToe.Circle;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -84,6 +86,8 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
             case Line: finalShape = new Line(((Line) DragShape)); break;
             case Oval: finalShape = new Oval(((Oval) DragShape)); break;
             case Custom: finalShape = new RoundRect(((RoundRect) DragShape)); break;
+            case Circle3: finalShape = new Circle3(((Circle3) DragShape)); break;
+            case Flag3: finalShape = new Flag3(((Flag3) DragShape)); break;
         }
         ShapeList.add(finalShape);
         ShapeList.remove(DragShape);
@@ -116,6 +120,8 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
                 case Line: DragShape = new Line(x1,y1,x2,y2, PainterPanel.Color1, PainterPanel.Color2, PainterPanel.drawFilled, PainterPanel.strokeWidth, PainterPanel.drawGradient); break;
                 case Oval: DragShape = new Oval(x1,y1,x2,y2, PainterPanel.Color1, PainterPanel.Color2, PainterPanel.drawFilled, PainterPanel.strokeWidth, PainterPanel.drawGradient); break;
                 case Custom: DragShape = new RoundRect(x1,y1,x2,y2,PainterPanel.Color1, PainterPanel.Color2, PainterPanel.drawFilled, PainterPanel.strokeWidth, PainterPanel.drawGradient); break;
+                case Circle3: DragShape = new Circle3(x1,y1,x2,y2, PainterPanel.Color1, PainterPanel.Color2, Color.BLACK, PainterPanel.drawFilled, PainterPanel.strokeWidth, PainterPanel.drawGradient); break;
+                case Flag3: DragShape = new Flag3(x1,y1,x2,y2, PainterPanel.Color1, PainterPanel.Color2, Color.BLACK, PainterPanel.drawFilled, PainterPanel.strokeWidth, PainterPanel.drawGradient); break;
             }
             ShapeList.add(DragShape);
             repaint();
