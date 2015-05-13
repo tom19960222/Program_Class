@@ -55,7 +55,7 @@ public abstract class Shape {
         this.filled = filled;
     }
 
-    public Boolean getVisible() {
+    public Boolean isVisible() {
         return visible;
     }
 

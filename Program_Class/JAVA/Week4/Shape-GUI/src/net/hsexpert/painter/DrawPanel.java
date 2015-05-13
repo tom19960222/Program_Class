@@ -1,7 +1,5 @@
 package net.hsexpert.painter;
 
-import net.hsexpert.TicTacToe.Circle;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -26,6 +24,23 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
         for (Shape S : ShapeList)
             S.draw(G);
     }
+    private void cleanInvisibleGraphics()
+    {
+        for(Shape S : ShapeList)
+        {
+            if(!S.isVisible())
+                ShapeList.remove(S);
+        }
+    }
+    private Boolean containsInvisibleGraphics()
+    {
+        for(Shape S : ShapeList)
+        {
+            if(S.isVisible())
+                return true;
+        }
+        return false;
+    }
     public void paintTest()
     {
         for(int i = 0; i < 1000; i++)
@@ -42,7 +57,7 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
     {
         int i;
         for(i = ShapeList.size()-1; i >= 0; i--)
-            if (ShapeList.get(i).getVisible()) {
+            if (ShapeList.get(i).isVisible()) {
                 ShapeList.get(i).setVisible(false);
                 break;
             }
@@ -51,7 +66,7 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
     {
         int  i;
         for(i = 0; i < ShapeList.size(); i++)
-            if (!ShapeList.get(i).getVisible()){
+            if (!ShapeList.get(i).isVisible()){
                 ShapeList.get(i).setVisible(true);
                 break;
             }
@@ -70,6 +85,8 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
 
     @Override
     public void mousePressed(MouseEvent e) {
+        cleanInvisibleGraphics(); // When you clicked on drawpanel, you are ready to draw
+                                  // , so invisible graphics can be cleared.
         x1 = e.getX();
         y1 = e.getY();
     }

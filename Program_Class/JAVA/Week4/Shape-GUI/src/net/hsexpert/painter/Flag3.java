@@ -30,7 +30,6 @@ public class Flag3 extends Rect {
     public void draw(Graphics G) {
         if(!this.visible) return;
         Graphics2D g2d = (Graphics2D)G;
-        System.out.println(this);
         g2d.setColor(this.color1);
         g2d.fillRect(x1, y1, onethirdWidth, height);
         g2d.setColor(this.color2);

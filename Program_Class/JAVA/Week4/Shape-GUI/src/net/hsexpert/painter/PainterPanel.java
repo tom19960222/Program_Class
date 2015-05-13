@@ -1,6 +1,5 @@
 package net.hsexpert.painter;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -68,14 +67,11 @@ public class PainterPanel extends JPanel implements ActionListener, ChangeListen
         slideStroke = new JSlider(1,20,10);
         labelStroke = new JLabel();
 
-        /*
-        try {
 
-            Image img = ImageIO.read(getClass().getResource("WALL16.jpg"));
-            btnColor1.setIcon(new ImageIcon(img));
-        }
-        catch(Exception e) {}
-        */
+//        try {
+//            btnColor1.setIcon(new ImageIcon(getClass().getResource("WALL16.jpg")));
+//        }
+//        catch(Exception e) {}
 
         ActionPanel.add(btnClear);
         ActionPanel.add(btnUndo);
