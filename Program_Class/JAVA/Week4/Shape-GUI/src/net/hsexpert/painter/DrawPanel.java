@@ -97,18 +97,38 @@ public class DrawPanel extends JPanel implements MouseListener, MouseMotionListe
         x2 = e.getX();
         y2 = e.getY();
         Shape finalShape = new Rect(0,0,0,0);
-        switch(PainterPanel.CurrentShape) {
-            case Rect: finalShape = new Rect(((Rect) DragShape)); break;
-            case Triangle: finalShape = new Triangle(((Triangle) DragShape)); break;
-            case Line: finalShape = new Line(((Line) DragShape)); break;
-            case Oval: finalShape = new Oval(((Oval) DragShape)); break;
-            case Custom: finalShape = new RoundRect(((RoundRect) DragShape)); break;
-            case Circle3: finalShape = new Circle3(((Circle3) DragShape)); break;
-            case Flag3: finalShape = new Flag3(((Flag3) DragShape)); break;
+        try {
+            switch (PainterPanel.CurrentShape) {
+                case Rect:
+                    finalShape = new Rect(((Rect) DragShape));
+                    break;
+                case Triangle:
+                    finalShape = new Triangle(((Triangle) DragShape));
+                    break;
+                case Line:
+                    finalShape = new Line(((Line) DragShape));
+                    break;
+                case Oval:
+                    finalShape = new Oval(((Oval) DragShape));
+                    break;
+                case Custom:
+                    finalShape = new RoundRect(((RoundRect) DragShape));
+                    break;
+                case Circle3:
+                    finalShape = new Circle3(((Circle3) DragShape));
+                    break;
+                case Flag3:
+                    finalShape = new Flag3(((Flag3) DragShape));
+                    break;
+            }
+            ShapeList.add(finalShape);
+            ShapeList.remove(DragShape);
         }
-        ShapeList.add(finalShape);
-        ShapeList.remove(DragShape);
-
+        catch(NullPointerException ex)
+        {
+            System.out.println("Null DragShape!");
+            ex.printStackTrace();
+        }
         DragShape = null;
         finalShape = null;
         repaint();
